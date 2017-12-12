@@ -1,12 +1,12 @@
 const imagePicker = {
   show() {
-      alert("module ImagePicker is created sucessfully ")
+      alert("module imagePicker is created sucessfully ")
   }
 };
 
 
 const meta = {
-   ImagePicker: [{
+    imagePicker: [{
     name: 'show',
     args: []
   }]
