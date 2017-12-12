@@ -1,4 +1,4 @@
-const ImagePicker = {
+const imagePicker = {
   show() {
       alert("module ImagePicker is created sucessfully ")
   }
@@ -13,7 +13,7 @@ const meta = {
 };
 
 function init(weex) {
-  weex.registerModule('ImagePicker', imagePicker, meta);
+  weex.registerModule('imagePicker', imagePicker, meta);
 }
 
 export default {
