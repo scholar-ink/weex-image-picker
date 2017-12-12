@@ -29,4 +29,5 @@ Pod::Spec.new do |s|
   s.dependency "WeexPluginLoader"
   s.dependency "WeexSDK"
   s.dependency "ZLPhotoBrowser"
+  s.dependency "AFNetworking"
 end

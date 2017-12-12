@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C45843F01E84EF7B00D88C0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C45843EF1E84EF7B00D88C0B /* Info.plist */; };
-		C45843FC1E84F39100D88C0B /* ImagePickerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C45843F61E84F39100D88C0B /* Module.h */; };
+		C45843FC1E84F39100D88C0B /* ImagePickerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C45843F61E84F39100D88C0B /* ImagePickerModule.h */; };
 		C45843FD1E84F39100D88C0B /* ImagePickerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C45843F71E84F39100D88C0B /* ImagePickerModule.m */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +130,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C45843DA1E84EF5B00D88C0B;
 			productRefGroup = C45843E51E84EF5B00D88C0B /* Products */;

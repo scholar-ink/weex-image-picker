@@ -6,6 +6,7 @@ def common
 	pod 'WeexSDK'
 	pod 'WeexPluginLoader'
     pod 'ZLPhotoBrowser'
+    pod 'AFNetworking', '~> 3.0'
 end
 
 target 'ImagePicker' do
