@@ -1,6 +1,6 @@
 {
     "name": "weex-plugin-image-picker",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "./js/build/main.js",
     "description": "image-picker extend for weex",
     "license": "Apache-2.0",
@@ -10,14 +10,14 @@
         "//": "安装类型为pod",
         "type": "pod",
         "name": "ImagePicker",
-        "version": "0.0.3"
+        "version": "0.0.4"
     },
     "android": {
         "//": "安装类型为maven",
         "type": "maven",
         "groupId": "org.weex.plugin",
         "name": "imagepicker",
-        "version": "0.0.3"
+        "version": "0.0.4"
     },
     "keywords": [
         "weex",
