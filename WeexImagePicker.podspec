@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Pod::Spec.new do |s|
-  s.name         = "ImagePicker"
+  s.name         = "WeexImagePicker"
   s.version      = "0.0.4"
   s.summary      = "Weex Plugin"
 

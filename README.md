@@ -34,7 +34,7 @@ image-picker是一个weex插件，可以通过weexpack快速集成，可以丰�
 - 手动集成
   在podfile 中添加
   ```
-  pod 'ImagePicker'
+  pod 'WeexImagePicker'
   ```
 
 ## 安卓集成插件imagepicker
