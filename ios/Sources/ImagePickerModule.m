@@ -127,18 +127,22 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
     NSArray *urls = options[@"urls"];
     
     if (urls != nil) {
-        NSInteger index = [urls indexOfObject:options[@"current"]];
         
-        NSMutableArray *arrNetImages = [NSMutableArray array];
-        
-        for (NSString *url in urls) {
-            NSURL *nsurl = [NSURL URLWithString:url];
-            [arrNetImages addObject:nsurl];
+        if ([urls indexOfObject:options[@"current"]] != NSNotFound) {
+            
+            NSInteger index = [urls indexOfObject:options[@"current"]];
+            
+            NSMutableArray *arrNetImages = [NSMutableArray array];
+            
+            for (NSString *url in urls) {
+                NSURL *nsurl = [NSURL URLWithString:url];
+                [arrNetImages addObject:nsurl];
+            }
+            
+            [[self getActionSheet] previewPhotos:arrNetImages index:index hideToolBar:YES complete:^(NSArray * _Nonnull photos) {
+                NSLog(@"%@", photos);
+            }];
         }
-        
-        [[self getActionSheet] previewPhotos:arrNetImages index:index hideToolBar:YES complete:^(NSArray * _Nonnull photos) {
-            NSLog(@"%@", photos);
-        }];
     }
 }
 

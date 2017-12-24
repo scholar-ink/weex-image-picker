@@ -51,7 +51,7 @@
 						'http://pic.962.net/up/2013-11/20131111660842029339.jpg',
 						'http://pic.962.net/up/2013-11/20131111660842034354.jpg'
 					],
-                    current: 'http://tmp/EB595F69-3779-4C92-A947-A9E9DCFB7446.jpeg',
+                    current: 'http://pic.962.net/up/2013-11/20131111660842034354.jpg',
                 })
 			},
 			uploadFile: function () {

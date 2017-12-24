@@ -72,21 +72,21 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var ImagePicker = {
+	var imagePicker = {
 	  show: function show() {
-	    alert("module ImagePicker is created sucessfully ");
+	    alert("module imagePicker is created sucessfully ");
 	  }
 	};
 
 	var meta = {
-	  ImagePicker: [{
+	  imagePicker: [{
 	    name: 'show',
 	    args: []
 	  }]
 	};
 
 	function init(weex) {
-	  weex.registerModule('ImagePicker', imagePicker, meta);
+	  weex.registerModule('imagePicker', imagePicker, meta);
 	}
 
 	exports.default = {
