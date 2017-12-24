@@ -1,6 +1,6 @@
 {
     "name": "weex-plugin-image-picker",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "./js/build/main.js",
     "description": "image-picker extend for weex",
     "license": "Apache-2.0",
