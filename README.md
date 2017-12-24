@@ -20,7 +20,7 @@ image-picker是一个weex插件，可以通过weexpack快速集成，可以丰�
   ```
 - 添加插件
   ```
-  weex plugin add image-picker
+  weex plugin add weex-plugin-image-picker
   ```
 # 项目地址
 [github](please add you source code address)
@@ -29,7 +29,7 @@ image-picker是一个weex插件，可以通过weexpack快速集成，可以丰�
 ## iOS集成插件ImagePicker
 - 命令行集成
   ```
-  weex plugin add image-picker
+  weex plugin add weex-plugin-image-picker
   ```
 - 手动集成
   在podfile 中添加
@@ -40,7 +40,7 @@ image-picker是一个weex插件，可以通过weexpack快速集成，可以丰�
 ## 安卓集成插件imagepicker
 - 命令行集成
   ```
-  weexpack plugin add image-picker
+  weexpack plugin add weex-plugin-image-picker
   ```
 - 手动集成
   在相应工程的build.gradle文件的dependencies中添加

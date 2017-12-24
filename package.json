@@ -9,7 +9,7 @@
     "ios": {
         "//": "安装类型为pod",
         "type": "pod",
-        "name": "ImagePicker",
+        "name": "WeexImagePicker",
         "version": "0.0.4"
     },
     "android": {
@@ -17,7 +17,7 @@
         "type": "maven",
         "groupId": "org.weex.plugin",
         "name": "imagepicker",
-        "version": "0.0.4"
+        "version": "0.0.3"
     },
     "keywords": [
         "weex",
