@@ -55,17 +55,17 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
     
     //记录上次选择的图片
     actionSheet.arrSelectedAssets = self.lastSelectAssets;
-   
+    
     return  actionSheet;
 }
 
 -(void)chooseImage:(NSDictionary *)options callback:(WXModuleCallback)callback
 {
     NSMutableDictionary *mutableOptions = options.mutableCopy;
-
+    
     NSArray *colorOptionArray = @[@"navBarColor",@"navTitleColor",@"bottomViewBgColor",@"bottomBtnsNormalTitleColor",@"bottomBtnsDisableBgColor"];
     for (NSString *key in [mutableOptions allKeys]) {
-
+        
         if ([colorOptionArray containsObject:key]) {
             [mutableOptions setObject:[WXConvert UIColor:mutableOptions[key]] forKey:key];
         }
@@ -73,7 +73,7 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
     self.options = mutableOptions;
     
     ZLPhotoActionSheet *actionSheet = [self getActionSheet];
-
+    
     zl_weakify(self);
     [actionSheet setSelectImageBlock:^(NSArray<UIImage *> * _Nonnull images, NSArray<PHAsset *> * _Nonnull assets, BOOL isOriginal) {
         zl_strongify(weakSelf);
@@ -98,8 +98,10 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
                 
                 NSString *tmpUrl = [NSString stringWithFormat:@"zcfile://tmp_%@.jpg", [[NSUUID UUID] UUIDString]];
                 
-                [manager storeImage:images[i] forKey:tmpUrl];
-                
+                [[[SDImageCache sharedImageCache] storeImage:images[i] forKey:tmpUrl completion:^{
+                    
+                }]
+                                
                 NSMutableDictionary *tempFile = [NSMutableDictionary dictionary];
                 
                 [tempFile setObject:tmpUrl forKey:@"path"];
@@ -184,3 +186,4 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
     }];
 }
 @end
+

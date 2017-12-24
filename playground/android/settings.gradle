@@ -1,4 +1,4 @@
 include ':app'
 
-include ":library"
+include ':library'
 project (':library').projectDir = new File("../../android/library")
