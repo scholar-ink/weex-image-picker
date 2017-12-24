@@ -94,14 +94,12 @@ WX_EXPORT_METHOD(@selector(uploadFile:success:fail:progress:))
             
             for (int i = 0; i < images.count; i++) {
                 
-                SDImageCache *manager = [SDImageCache sharedImageCache];
-                
                 NSString *tmpUrl = [NSString stringWithFormat:@"zcfile://tmp_%@.jpg", [[NSUUID UUID] UUIDString]];
                 
-                [[[SDImageCache sharedImageCache] storeImage:images[i] forKey:tmpUrl completion:^{
+                [[SDImageCache sharedImageCache] storeImage:images[i] forKey:tmpUrl completion:^{
                     
-                }]
-                                
+                }];
+                 
                 NSMutableDictionary *tempFile = [NSMutableDictionary dictionary];
                 
                 [tempFile setObject:tmpUrl forKey:@"path"];
